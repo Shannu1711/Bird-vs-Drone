@@ -43,6 +43,18 @@ header[data-testid="stHeader"] { background: transparent; }
 [data-testid="stFileUploader"] label, [data-testid="stCaptionContainer"],
 [data-testid="stFileUploaderDropzone"] small { color: #394b68; }
 [data-testid="stImage"] img { border-radius: 1rem; }
+[data-testid="stMetric"] {
+    background: linear-gradient(115deg, #193557f5, #342f61f5);
+    border-color: #69789a;
+    box-shadow: inset 0 1px 0 #ffffff29;
+}
+[data-testid="stMetric"] :is([data-testid="stMetricLabel"], [data-testid="stMetricValue"]),
+[data-testid="stMetric"] :is([data-testid="stMetricLabel"], [data-testid="stMetricValue"]) * {
+    color: #fff;
+    opacity: 1;
+}
+[data-testid="stMetricValue"] { font-weight: 700; }
+[data-testid="stCaptionContainer"] p { color: #394b68; }
 </style>
 """, unsafe_allow_html=True)
 
